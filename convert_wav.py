@@ -173,7 +173,8 @@ sr_new = 16050
 ref = pd.read_csv('./original_data/360_speech_audio_video/label_gaze_table.csv')
 id_list = set(ref.id.values)
 path_load = './original_data/360_speech_audio_video/'
-video_file_list = [x for x in os.listdir(path_load) if x.endswith('.mp4')]   # Load video files
+# Load video files
+video_file_list = [x for x in os.listdir(path_load) if x.endswith('.mp4')]   
 
 #%%
 # Loop for each subject
